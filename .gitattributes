@@ -1,0 +1,46 @@
+# Normalize line endings for all text files
+* text=auto
+
+# Treat specific file types as binary
+*.exe binary
+*.dll binary
+*.pdb binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+
+# Ignore certain generated files from diff/merge
+*.log -diff
+*.tmp -diff
+*.bak -diff
+
+# Ignore Visual Studio specific files from export
+.vscode/* export-ignore
+*.suo export-ignore
+*.user export-ignore
+*.userosscache export-ignore
+*.sln.docstates export-ignore
+
+# Ignore build outputs (bin/ and obj/)
+bin/* export-ignore
+obj/* export-ignore
+
+# Ensure Visual Studio project files use consistent line endings
+*.cs eol=lf
+*.xaml eol=lf
+*.sln eol=crlf
+*.csproj eol=crlf
+*.resx eol=lf
+
+# Specify diff drivers for specific file types (optional)
+*.cs diff=csharp
+*.xaml diff=xml
+*.json diff=json
+*.md diff=markdown
+
+# Force UTF-8 encoding for text files
+*.cs text eol=lf
+*.xaml text eol=lf
+*.txt text eol=lf
+*.md text eol=lf

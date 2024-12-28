@@ -1,0 +1,26 @@
+# Ignore build output directories
+bin/
+obj/
+Debug/
+Release/
+
+# Visual Studio specific files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Temporary files
+*.tmp
+*.log
+
+# Compiled executables and libraries
+*.exe
+*.dll
+
+# Ignore user-specific settings
+*.config
+
+# macOS system files
+.DS_Store
